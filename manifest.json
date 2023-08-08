@@ -1,19 +1,21 @@
 {
 
-  "description": "Adds a solid red border to all webpages matching mozilla.org. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#borderify",
-  "manifest_version": 2,
-  "name": "Borderify",
-  "version": "1.0",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/borderify",
-  "icons": {
-    "48": "icons/border-48.png"
-  },
+    "description": "Redirects new organisation login requests with Xero to a containerised tab using the organisation short id as the container ID to allow a user to access multiple organisational accounts at once.",
+    "manifest_version": 2,
+    "name": "xero_multi_account",
+  "  version": "1.0",
+    "homepage_url": "https://github.com/supinie/xero_multi_account",
+  "  icons": {
+        "48": "icons/border-48.png"
+    },
 
-  "content_scripts": [
-    {
-      "matches": ["*://go.xero.com/OrganisationLogin/*"],
-      "js": ["xero.js"]
+  "  permission": [
+        "webRequest",
+      "  webRequestBlocking",
+      "  https://go.xero.com/OrganisationLogin/*"
+    ],
+    
+    "background": {
+        "scripts": ["xero.js"]
     }
-  ]
-
 }
