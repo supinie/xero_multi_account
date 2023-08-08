@@ -12,7 +12,8 @@
   "  permission": [
         "webRequest",
       "  webRequestBlocking",
-      "  https://go.xero.com/OrganisationLogin/*"
+        "https://go.xero.com/OrganisationLogin/*",
+        "https://developer.mozilla.org/" 
     ],
     
     "background": {
