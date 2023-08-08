@@ -1,7 +1,7 @@
 {
     "description": "Redirects new organisation login requests with Xero to a containerised tab using the organisation short id as the container ID to allow a user to access multiple organisational accounts at once.",
     "manifest_version": 2,
-    "name": "webRequest-demo",
+    "name": "Xero multi-account",
     "version": "1.0",
 
     "permissions": [
